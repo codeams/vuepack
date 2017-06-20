@@ -33,20 +33,6 @@ yarn test
 {{/if_or}}
 ```
 
-## Include Foundation variables in all *.vue files
-
-Uncomment these lines in `build/utils.js` to automatically import the settings file in all components using SASS.
-
-```javascript
-...
-scss: generateLoaders('sass'),
-// scss: generateLoaders('sass', {
-//   data: '@import "~assets/style/settings";'
-// }),
-stylus: generateLoaders('stylus'),
-...
-```
-
 ## About the boilerplate
 
 This repository uses the [codeams/vuepack](http://github.com/codeams/vuepack) template.
