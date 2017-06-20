@@ -23,6 +23,20 @@ $ npm run dev
 
 If port 8080 is already in use on your machine you must change the port number in `/config/index.js`. Otherwise `npm run dev` will fail.
 
+### Include Foundation variables in all *.vue files
+
+Go to `build/utils.js` and uncomment those lines in order to automatically import the settings file in all components that use Sass.
+
+```javascript
+...
+scss: generateLoaders('sass'),
+// scss: generateLoaders('sass', {
+//   data: '@import "~assets/style/settings";'
+// }),
+stylus: generateLoaders('stylus'),
+...
+```
+
 ## What's Included
 
 - `npm run dev`: first-in-class development experience.
